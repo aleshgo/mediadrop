@@ -144,7 +144,7 @@ class FTPStorage(FileStorageEngine):
     def _connect(self):
         """Open a connection to the FTP server."""
         data = self._data
-        return FTP(data[FTP_SERVER], data[FTP_USERNAME], data[FTP_PASSWORD])
+        return FTP(data[FTP_SERVER], data[FTP_USERNAME], data[FTP_PASSWORD], timeout=120000)
 
     def _verify_upload_integrity(self, file, file_url):
         """Download the given file from the URL and compare the SHA1s.
