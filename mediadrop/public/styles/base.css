@@ -133,15 +133,15 @@ a:hover {
 .mcore-login-box {
 	width: 920px;       /* same as .mediadrop-content */
 	position: relative;
-	
+
 	/* don't reserve any space, we use relative/absolute positioning with negative margins anyway */
 	height: 0px;
-	
+
 	/* ensure that 'login' link is visible if there is no head html/site
 	 * title - setting will be overriden by appearance.css if logo should be
 	 * displayed */
 	margin-top: 20px;
-	
+
 	margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
@@ -152,7 +152,7 @@ a:hover {
 	position: absolute;
 	top: -15px;
 	right: 0px;
-	
+
 	float: right;
 }
 
@@ -337,7 +337,6 @@ a.meta-likes:active strong {
 	width: 890px;
 }
 .media-desc p {
-	margin-bottom: 10px;
 }
 .media-desc ol,
 .media-desc ul {
@@ -630,8 +629,8 @@ a:focus .grid-title {
 	display: block;
 }
 
-/* IE 9 renders the dislike button with more than 11px so parts of the other 
-   icons in the sprite image are visible. overflow hidden will hide these 
+/* IE 9 renders the dislike button with more than 11px so parts of the other
+   icons in the sprite image are visible. overflow hidden will hide these
    extra parts. Of course Firefox and Chrome work without that IE workaround... */
 .mcore-dislike form {
 	overflow: hidden;
@@ -1039,7 +1038,7 @@ textarea {
 	margin: 10px auto 30px auto;
 	border-radius: 4px;
 	font-weight: bold;
-	
+
 	padding: 10px;
 	line-height: 1;
 }

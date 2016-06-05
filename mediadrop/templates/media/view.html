@@ -55,7 +55,7 @@ See LICENSE.txt in the main project directory, for more information.
 				<span i18n:msg="authorName">by ${media.author.name}</span>
 			</div>
 			<div id="description-excerpt" class="media-desc" py:with="fulltext = media.description or u''; excerpt = h.excerpt_xhtml(fulltext, 340)">
-				<div class="mcore-excerpt-fulltext"><p py:content="Markup(fulltext)" /></div>
+				<div class="mcore-excerpt-fulltext"><p py:replace="Markup(fulltext)" /></div>
 				<div class="mcore-excerpt" style="display:none" py:if="excerpt != fulltext"><p py:content="Markup(excerpt)" /></div>
 			</div>
 			<div class="feat-stats clearfix">
