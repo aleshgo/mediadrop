@@ -34,5 +34,4 @@ unidecode
 decorator >= 3.3.2 # (version required by Pylons 1.0)
 simplejson >= 2.2.1 # (version required by Pylons 1.0)
 aniso8601==1.0.0
-bleach >= 1.4.1
-
+bleach == 1.4.2
